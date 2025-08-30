@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://y1rnkih7xep4"]
+[gd_scene load_steps=3 format=3 uid="uid://y1rnkih7xep4"]
 
 [ext_resource type="PackedScene" uid="uid://b46wj3hbk1ma4" path="res://Assets/BANK.fbx" id="1_uptpg"]
+[ext_resource type="ArrayMesh" uid="uid://1mt5thdieehn" path="res://Assets/Cube_124.res" id="2_rfu1n"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="BANK" parent="." instance=ExtResource("1_uptpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.698431, 2.38419e-07, 0.985472)
+
+[node name="Cube124" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.21639, -99.9754, 0, 99.9754, 2.21639, 0, 0, 0, 100, -0.991445, 1.87482, 4.2927)
+mesh = ExtResource("2_rfu1n")
